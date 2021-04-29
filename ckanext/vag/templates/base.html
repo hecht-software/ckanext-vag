@@ -8,8 +8,12 @@
 {% endblock %}
 
 {% block styles %}
-{{ super() }}
+  {{ super() }}
+  <link rel="stylesheet" href="/base/fonts/stylesheet.css">
+  {% asset 'vag/vag-stylesheets' %}
+{% endblock %}
+
+{% block custom_styles %}
+  {{ super() }}
   <link rel="stylesheet" href="/base/css/main.css">
-  {% resource 'vag/fonts/stylesheet.css' %}
-  {% resource 'vag/css/klaro.css' %}
 {% endblock %}

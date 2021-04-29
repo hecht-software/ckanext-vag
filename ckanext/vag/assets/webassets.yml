@@ -1,0 +1,7 @@
+vag-stylesheets:
+  output: ckanext-vag/%(version)s_vag.css
+  contents:
+    - css/klaro.css
+    #- fonts/stylesheet.css # In CKAN 2.9.2 it seems we have to create a bundle for each single font file, because they
+                            # are imported via url() in stylesheet.css
+  #filters: cssrewrite # ValueError: Cannot determine url for '(...)/klaro.css'
