@@ -33,11 +33,14 @@ body {
   padding : 0;
 }
 
+.homepage .search-form {
+  margin-bottom: 0;
+}
+
 .navbar .nav {
   margin      : 0;
   font-family : 'frutigernextlt_condbold';
 }
-
 .account-masthead .account ul li a:hover {
   color            : black;
   background-color : none;
@@ -48,18 +51,49 @@ body {
   background-color : #990000;
 }
 
+.header-image {
+  flex: 0 1 auto;
+}
+.header-image img {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .main-navbar {
+    flex: 1 0 auto;
+  }
+}
+
 .masthead .site-search input {
   width   : 145px;
   padding : 6px 8px;
 }
 
-.masthead .nav>.active>a,
-.masthead .nav>.active>a:focus,
-.masthead .nav>.active>a:hover,
-.masthead .nav>li>a,
-.masthead .nav>li>a:focus,
-.masthead .nav>li>a:hover {
+.navbar-toggler {
+  background-color: #000;
+}
+
+.masthead .main-navbar {
+  margin-top: 10px;
+}
+@media (min-width: 992px) {
+  .masthead .main-navbar {
+    margin-top: 0;
+  }
+}
+
+
+.masthead .main-navbar ul {
+  padding-left: 20px;
+}
+.masthead .navbar-nav>.active>a,
+.masthead .navbar-nav>.active>a:focus,
+.masthead .navbar-nav>.active>a:hover,
+.masthead .navbar-nav>li>a,
+.masthead .navbar-nav>li>a:focus,
+.masthead .navbar-nav>li>a:hover {
   color            : #fff;
+  display          : block;
   border-radius    : 0;
   background-color : black;
   text-shadow      : none;
@@ -84,7 +118,7 @@ body {
   background : none;
 }
 
-.hero {
+.homepage .hero {
   background : url("/base/images/bg-image.jpg");
 }
 

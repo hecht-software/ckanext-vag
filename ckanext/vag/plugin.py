@@ -5,7 +5,7 @@ from ckan.lib.plugins import DefaultTranslation
 
 class VagPlugin(plugins.SingletonPlugin, DefaultTranslation):
     plugins.implements(plugins.IConfigurer)
-    plugins.implements(plugins.IRoutes, inherit=True)
+    #plugins.implements(plugins.IRoutes, inherit=True)
     plugins.implements(plugins.ITranslation)
     # IConfigurer
 
